@@ -61,7 +61,7 @@ async function getQuotes() {
 
     }catch (error) {
 
-        alert(error)
+        getQuotes()
 
     }
 }
@@ -78,7 +78,7 @@ newQuoteBtn.addEventListener('click', newQuote)
 twitterBtn.addEventListener('click', tweetQuote)
 
 //on load
-getQuotes();
+getQuotes()
 
 
 
